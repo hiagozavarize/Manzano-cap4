@@ -19,36 +19,40 @@ int main(){
     printf("Digite o valor de E: ");
     scanf("%d", &e);
 
-    if (a > b && b > c && c > d && d > e)
-    {
-        maior = a;
-        menor = e;
-        printf("O maior é %d e o menor é %d", a, e);        
+    // Identificar o maior valor
+    maior = a;
+    if (b > maior) {
+        maior = b;
     }
-    if (b > a && a > c && c > d && d > e)
-    {
-        maior = a;
-        menor = e;
-        printf("O maior é %d e o menor é %d", b, e);        
-    }
-    if (c > a && a > b && b > d && d > e)
-    {
+    if (c > maior) {
         maior = c;
-        menor = e;
-        printf("O maior é %d e o menor é %d", c, e);        
     }
-    if (d > a && a > b && b > c && c > e)
-    {
+    if (d > maior) {
         maior = d;
-        menor = e;
-        printf("O maior é %d e o menor é %d", d, e);        
     }
-    if (e > d && d > c && c > a && a > b)
-    {
+    if (e > maior) {
         maior = e;
-        menor = b;
-        printf("O maior é %d e o menor é %d", e, b);        
     }
+
+    // Identificar o menor valor
+    menor = a;
+    if (b < menor) {
+        menor = b;
+    }
+    if (c < menor) {
+        menor = c;
+    }
+    if (d < menor) {
+        menor = d;
+    }
+    if (e < menor) {
+        menor = e;
+    }
+
+    // Apresentar o maior e o menor valores informados
+    printf("O maior valor informado e: %d\n", maior);
+    printf("O menor valor informado e: %d\n", menor);
+
 
     return 0;
 }

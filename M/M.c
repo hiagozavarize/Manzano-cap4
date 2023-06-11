@@ -12,7 +12,7 @@ int main(){
     printf("Digite seu nome: ");
     scanf("%s", &nome);
     printf("Qual seu sexo M/F: ");
-    scanf(" %c", &sexo);
+    scanf("%c", &sexo);
 
     if(sexo == 'M' || sexo == 'm' || sexo == 'F' || sexo == 'f')
     {

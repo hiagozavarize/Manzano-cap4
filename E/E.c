@@ -26,13 +26,13 @@ int main(){
         x1 = (-valorB + sqrt(delta))/2*valorA;
         x2 = (-valorB - sqrt(delta))/2*valorA;
 
-        printf("x¹ vale %d \n", x1);
-        printf("x² vale %d \n", x2);
+        printf("x1 vale %d \n", x1);
+        printf("x2 vale %d \n", x2);
     }
     if (delta == 0){
         x1 = (-valorB)/2*valorA;
 
-        printf("x¹ vale %d", x1);
+        printf("x? vale %d", x1);
     }
 
     return 0;
